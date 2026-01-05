@@ -9,5 +9,5 @@ def check_join(user_id):
     }
     r = requests.post(url, data=data).json()
     if "result" in r:
-        return r["result"]["status"] in ["member", "administrator", "creator"]
+        return r["result"]["status"] in ["member","administrator","creator"]
     return False
