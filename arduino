@@ -1,17 +1,9 @@
-telegram-web/
-│
+web/
 ├── app.py
 ├── config.py
-├── telegram.py
 ├── requirements.txt
-│
 ├── templates/
-│   ├── index.html
-│   ├── course.html
-│   └── lock.html
-│
+│   └── index.html
 └── static/
-    ├── css/
-    │   └── style.css
-    └── js/
-        └── main.js
+    └── css/
+        └── style.css
