@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="grid">
+{% for c in courses %}
+  <div class="card">
+    <img src="{{ c.image }}">
+    <h2>{{ c.title }}</h2>
+    <p>{{ c.description }}</p>
+
+    {% if c.status == "live" %}
+      <a href="/get-access" class="btn">Get Access</a>
+    {% else %}
+      <span class="upcoming">⏳ {{ c.launch_date }}</span>
+    {% endif %}
+  </div>
+{% endfor %}
+</div>
+
+{% endblock %}
